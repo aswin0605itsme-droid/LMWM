@@ -1,0 +1,7 @@
+{
+  "name": "Remix: Learn Math With Me",
+  "description": "An interactive mathematics learning application with an engaging interface.",
+  "requestFramePermissions": [
+    "camera"
+  ]
+}
