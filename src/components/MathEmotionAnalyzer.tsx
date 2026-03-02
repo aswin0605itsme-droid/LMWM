@@ -596,7 +596,7 @@ export default function MathEmotionAnalyzer({ onBack }: MathEmotionAnalyzerProps
                           <Timer size={14} /> Hesitation Areas
                         </h3>
                         <ul className="text-sm text-slate-300 space-y-1">
-                          {profile.hesitationAreas.map((area, i) => (
+                          {(profile.hesitationAreas || []).map((area, i) => (
                             <li key={i}>• {area}</li>
                           ))}
                         </ul>
@@ -606,7 +606,7 @@ export default function MathEmotionAnalyzer({ onBack }: MathEmotionAnalyzerProps
                           <AlertCircle size={14} /> Confusion Patterns
                         </h3>
                         <ul className="text-sm text-slate-300 space-y-1">
-                          {profile.confusionPatterns.map((pattern, i) => (
+                          {(profile.confusionPatterns || []).map((pattern, i) => (
                             <li key={i}>• {pattern}</li>
                           ))}
                         </ul>
